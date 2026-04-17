@@ -18,6 +18,7 @@ spec:
     - protocol: TCP
       port: 3306 # service port
       targetPort: 3306
+# Create the Service/mysql
 ---
 apiVersion: v1
 kind: Service
@@ -37,6 +38,9 @@ spec:
     - protocol: TCP
       port: 3306 # service port
       targetPort: 3306
+
+
+# Create the Statefulset for mysql
 ---
 apiVersion: apps/v1
 kind: StatefulSet
