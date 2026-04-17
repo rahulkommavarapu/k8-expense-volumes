@@ -96,7 +96,7 @@ spec:
               path: nginx.conf
       containers:
       - name: nginx
-        image: rahul8096/frontend:1.2.0
+        image: rahul8096/frontend:1.0.0
         resources:
           # soft limit
           requests:
