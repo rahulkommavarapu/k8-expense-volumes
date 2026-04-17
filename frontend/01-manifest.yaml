@@ -52,7 +52,9 @@ data:
                 location = /40x.html {
             }
 
-            
+            location /api/ {
+        	proxy_pass http://backend:8080/;
+    	         }
 
             error_page 500 502 503 504 /50x.html;
                 location = /50x.html {
@@ -94,7 +96,7 @@ spec:
               path: nginx.conf
       containers:
       - name: nginx
-        image: rahul8096/frontend:1.0.0
+        image: rahul8096/frontend:1.0.1
         resources:
           # soft limit
           requests:
