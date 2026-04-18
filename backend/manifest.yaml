@@ -31,7 +31,7 @@ spec:
         project: expense
     spec:
       containers:
-        - name: nginx
+        - name: backend
           image: rahul8096/backend:1.0.0
           envFrom:
             - configMapRef:
